@@ -1,0 +1,62 @@
+*********** Semana 1 ***************
+ Carlos     	------ 	------ 	------ 	------ 	------ 	
+ Margarita  	------ 	------ 	------ 	------ 	tarde 	
+ Dolores    	mañana 	------ 	mañana 	------ 	------ 	
+ Marissa    	------ 	------ 	------ 	tarde 	------ 	
+ Luis       	------ 	------ 	------ 	------ 	------ 	
+ Carmen     	------ 	------ 	tarde 	------ 	------ 	
+ Felicia    	------ 	mañana 	------ 	------ 	mañana 	
+ Angeles    	------ 	------ 	------ 	mañana 	------ 	
+ Nacho      	------ 	------ 	------ 	------ 	------ 	
+ Mas        	------ 	------ 	------ 	------ 	------ 	
+ Carla      	------ 	tarde 	------ 	------ 	------ 	
+ Mercedes   	tarde 	------ 	------ 	------ 	------ 	
+ Miguel     	------ 	------ 	------ 	------ 	------ 	
+
+*********** Semana 2 ***************
+ Carlos     	------ 	------ 	------ 	------ 	------ 	
+ Margarita  	------ 	------ 	------ 	tarde 	------ 	
+ Dolores    	------ 	------ 	------ 	------ 	------ 	
+ Marissa    	------ 	------ 	mañana 	------ 	------ 	
+ Luis       	------ 	------ 	------ 	------ 	------ 	
+ Carmen     	mañana 	------ 	------ 	------ 	mañana 	
+ Felicia    	------ 	mañana 	------ 	------ 	------ 	
+ Angeles    	------ 	tarde 	------ 	mañana 	------ 	
+ Nacho      	------ 	------ 	------ 	------ 	------ 	
+ Mas        	------ 	------ 	------ 	------ 	tarde 	
+ Carla      	------ 	------ 	tarde 	------ 	------ 	
+ Mercedes   	tarde 	------ 	------ 	------ 	------ 	
+ Miguel     	------ 	------ 	------ 	------ 	------ 	
+
+*********** Semana 3 ***************
+ Carlos     	------ 	------ 	------ 	------ 	------ 	
+ Margarita  	------ 	------ 	------ 	tarde 	------ 	
+ Dolores    	------ 	------ 	------ 	------ 	------ 	
+ Marissa    	------ 	------ 	mañana 	------ 	mañana 	
+ Luis       	------ 	------ 	------ 	------ 	------ 	
+ Carmen     	mañana 	------ 	------ 	------ 	------ 	
+ Felicia    	------ 	------ 	------ 	------ 	------ 	
+ Angeles    	------ 	tarde 	------ 	------ 	------ 	
+ Nacho      	------ 	------ 	------ 	------ 	------ 	
+ Mas        	------ 	mañana 	------ 	mañana 	------ 	
+ Carla      	------ 	------ 	tarde 	------ 	------ 	
+ Mercedes   	tarde 	------ 	------ 	------ 	tarde 	
+ Miguel     	------ 	------ 	------ 	------ 	------ 	
+
+DATOS SOBRE EL HORARIO: 
+Media de preferencias satisfechas por semana 5.000000 
+Varianza del numero de horas 0.444445
+Numero de turnos que trabaja cada persona: 
+Carlos     --> 0 
+Margarita  --> 3 
+Dolores    --> 2 
+Marissa    --> 4 
+Luis       --> 0 
+Carmen     --> 4 
+Felicia    --> 3 
+Angeles    --> 4 
+Nacho      --> 0 
+Mas        --> 3 
+Carla      --> 3 
+Mercedes   --> 4 
+Miguel     --> 0 

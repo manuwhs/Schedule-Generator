@@ -1,0 +1,22 @@
+ Margarita  	------ 	------ 	mañana 	tarde 	mañana 	
+ Dolores    	mañana 	mañana 	mañana 	mañana 	tarde 	
+ Marissa    	mañana 	mañana 	mañana 	tarde 	mañana 	
+ Carmen     	mañana 	mañana 	tarde 	mañana 	mañana 	
+ Felicia    	tarde 	mañana 	mañana 	mañana 	mañana 	
+ Angeles    	mañana 	tarde 	mañana 	mañana 	mañana 	
+ Mas        	mañana 	mañana 	mañana 	mañana 	tarde 	
+ Carla      	mañana 	tarde 	tarde 	mañana 	mañana 	
+ Mercedes   	tarde 	tarde 	mañana 	tarde 	tarde 	
+
+
+ Margarita  	------ 	------ 	mañana 	------ 	------ 	
+ Dolores    	------ 	------ 	------ 	mañana 	------ 	
+ Marissa    	------ 	------ 	------ 	tarde 	------ 	
+ Carmen     	------ 	------ 	tarde 	------ 	------ 	
+ Felicia    	------ 	mañana 	------ 	------ 	------ 	
+ Angeles    	mañana 	------ 	------ 	------ 	------ 	
+ Mas        	------ 	------ 	------ 	------ 	tarde 	
+ Carla      	------ 	tarde 	------ 	------ 	------ 	
+ Mercedes   	tarde 	------ 	------ 	------ 	------ 	
+
+

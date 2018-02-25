@@ -1,0 +1,114 @@
+Hola tio Nacho !!!
+A ver, este programa está hecho en C para cualquier plataforma pero esta compilado en Windows con Cygwin por lo que cualquiera que quiera
+ejecutarlo debe tener dicho programa, asi nos olvidamos de incompatibilidades e historias de Windows.
+
+--> EJECUCIÓN:
+Para ejecutar el programa de la manera que describo debes de colocar la carpera con el programa y el archivo de entrada en la carpeta C:\Cygwin
+Digamos que la carpeta se llama "Horario", y que el programa dentro se llama "timetable" y el archivo de datos de entrada se llama "in" o "in.txt"
+1) Abre la terminal de Cygwin
+2) Escribe los siguientes comandos para posicionarte en la carpeta.
+Para "ejecutar" un comando lo escribimos y le damos a la techa ENTER
+	cd /
+	cd Horario
+3) El programa se ejecuta escribiendo:
+	./timetable.exe in.txt out
+Donde:
+	timetable.exe es el nombre del ejecutable
+	in.txt es el nombre del archivo de entrada con los datos
+	out sera el nombre de los archivos donde se guardara la salida
+
+--> FUNCIONAMIENTO DEL PROGRAMA
+Fundamentalmente lo que hace el programa es primeramente por cada semana que le das calcular las diferentes posibles asignaciones que
+se puedan realizar sin dar dobles turnos (pero que estos sean posibles claro).
+Cada semana tendra un numero X de posibles configuraciones, de esas X se escojeran un numero reducido que podremos configurar, llamemoslo "Top"
+Así pues una vez conseguidos las "Top" configuraciones de cada semana, toca elegir de cada semana una de sus "Top" configuraciones, y asignarle
+los dobles turnos pertinentes.
+Una vez asignados los dobles turnos comprobamos que dicha semana cumpla los requisitos de:
+	- Que una persona no trabaje 2 dias seguidos
+	- Que una persano no doble turno 2 semanas seguidas
+	- Que una persona no pueda hacer triple turno en una semana.
+		(Las dos primeras condiciones se pueden relajar como explicare a continuacion en un rato)
+Además comprueba cuan buena es en cuanto al reparto equitativo de horas y las preferencias satisfechas.
+
+El numero de posibles configuraciones es demasiado largo como para poder explorarlo todo, por lo que solo se exploran un numero "Z" configurable de posibilidades,
+de forma "pseudoaleatoria". Pseudoaleatoria significa que es aleatorio en si, pero que siempre que corramos el programa dara los mismos numeros aleatorios,
+ya que a mismas condiciones -> mismos resultados, pero su puedes cambiar eso para que cada vez que corras el programa vaya por soluciones diferentes con
+un parametro que puedes configurar y que se explicara mas adelante.
+
+Una vez el programa encuentra "S" soluciones o realiza "Z" intentos termina y escribe un 5 ficheros las 5 mejores configuraciones.
+Si el segundo nombre que le dimos al programa fue "out", los arvhivos se llamaran out0, out1, out2, out3 y out4, siendo out0 el mejor y out4 el peor.
+Alomejor encuentras dificultades para leer los archivos de salida, intentalo con el "Block de Notas", el "WordPad"...
+
+--> FORMATO DEL ARCHIVO DE ENTRADA
+Primeramente decir la forma en la que el programa lee el archivo:
+	Lo hace de forma secuencial, palabra por palabra, numero por numero asi pues puedes modificar estos pero no añadir ninguno
+	a menos que en el formato lo indiques (Se explica mas adelante).
+	Si añades por accidente algo o lo quitas el programa leera mal los datos y fallara.
+
+Vamos a ir viendolo sector por sector:
+
+*********************** Parámetros del programa ***********************
+	Intentos 1000000
+	Soluciones 50
+	Aleatorio 4
+	Segundos_turnos_seguidos 5
+	Dias_seguidos_trabajando 1
+	Soluciones_por_semana 10
+(Cambia solo los numeros y no elimines ninguna linea) 
+-> Intentos: 	 Nos dice el numero de configuraciones que vamos a probar, depende del tiempo que quieres que el ordenador le dedique.
+-> Soluciones:	 El numero máximo de soluciones que quieres que encuentre, cuando llegue a ese numero el programa terminara,
+esto es asi porque no podemos guardar 10000000 soluciones porque consumiria toda la memoria del ordenador.
+-> Aleatorio:	 Es un numero aleatorio que puedes cambiar por cuaquier otro entero positivo para que el programa con los mismos parametros
+    intente encontras diferentes soluciones
+-> Segundos_turnos_seguidos:	Diste la condicion de que alguien no pudiera doblar turno 2 semanas seguidas, a veces esta condicion puede
+   probocar que no se encuentren soluciones, asi pues se puede relajar haciendo que se pueda dar esa situacion tantas veces como indiquemos
+-> Dias_seguidos_trabajando	Lo mismo pero con la condicion de que una persona no pueda trabajar 2 dias seguidos.  
+-> Soluciones_por_semana:		Como dije, por cada semana escojemo las "Top" configuraciones para luego darles dobles turnos y tal. Este es ese numero
+
+*********************** Parametros generales *********************** 
+	Dias 5	Lunes 	Martes	Miercoles	Jueves	Viernes
+	Turnos 3	------ 	mañana	tarde
+	Personas 13   Carlos Margarita  Dolores  Marissa Luis Carmen  Felicia  Angeles  Nacho Mas  Carla Mercedes Miguel
+
+	Semanas 6
+
+En la primera linea especificamos el numero de dias en los que se trabaja (Esta claro que son 5 pero esta hecho asi, simplemente no lo cambies)
+En la segunda los posibles turnos, que son 3, ( No trabajar = -------)
+En la tercera ponemos el nombre de todas las personas que pueden trabajar. Primero pones el numero de las mismas y luego sus nombre,
+estos son los nombres que tendras que usar despues en los horarios. Puedes poner cualquier numero de personas, trabajen o no.
+Por ultimo en Semanas escribimos el numero de semanas del que vamos a hacer el horario.
+
+*********************** Parametros Semana *********************** 
+Cada semana debera tener todos estos campos:
+
+Disponibles 7
+Margarita ------ ------	mañana	tarde	mañana
+Marissa	mañana	mañana	mañana	tarde	mañana
+Carmen	mañana	mañana	tarde	mañana	-----
+Angeles	mañana	tarde	mañana	mañana	mañana
+Mas 	mañana	mañana	mañana	mañana	tarde
+Carla	tarde	tarde	tarde	mañana	mañana
+Mercedes tarde	tarde	tarde	tarde	tarde
+			
+Carmen	Dolores	Marissa	Angeles	Felicia
+Mercedes ------	Carla	Margarita	Mas
+
+-> Pimeramente tenemos que decir al programa cuantas personas estan disponibles en esa semana, cambia el numero segun sean.
+-> Despues tenemos que escribir una linea por cada persona disponible, indicando para cada dia de la semana, que turnos puede realizar
+	Como ves solo puedes indicar que cierta persona puede trabajar cierto dia por la mañana o por la tarde pero no ambas,
+	Asi me lo diste y asi esta y cambiar seria bastante dificil.
+	El ------ significa que esa persona ese dia no puede trabajar.
+
+-> Las últimas 2 lineas contienen las preferencias.
+	Se debe dar una preferencia por cada posible turno, en este caso 10.
+	La forma en la que se lee es por ejemplo, que la preferencia para:
+		Lunes tarde --> Mercedes
+		Jueves mañana -> Angeles
+		Miercoles tarde -> Carla
+	Si no hay preferencias para un cierto dia pon lo que sea, por ejemplo -----
+	Da igual que en una preferencia pongas alguien que en verdad no esta disponible esa semana, el programa comprobara eso
+	y si en verdad esa persona no lo esta, no pondra preferencia para ese dia.
+
+Saludos !!
+
+

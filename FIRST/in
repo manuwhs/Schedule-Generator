@@ -1,0 +1,99 @@
+Intentos 100000000
+Soluciones 50
+Aleatorio 4
+Segundos_turnos_seguidos 5
+Dias_seguidos_trabajando 1
+Soluciones_por_semana 15
+
+Dias 5	Lunes 	Martes	Miercoles	Jueves	Viernes
+Turnos 3	------ 	mañana	tarde
+Personas 13   Carlos Margarita  Dolores  Marissa Luis Carmen  Felicia  Angeles  Nacho Mas  Carla Mercedes Miguel
+
+Semanas 6
+
+Disponibles 8
+Margarita ------ ------	------	tarde	tarde
+Dolores	mañana	mañana	mañana	------	-----
+Marissa	mañana	mañana	mañana	tarde	mañana
+Carmen	----	---	tarde	mañana	mañana
+Felicia tarde	mañana	mañana  mañana	mañana
+Angeles	mañana	tarde	mañana	mañana	mañana
+Carla	mañana	tarde	tarde	mañana	mañana
+Mercedes tarde	tarde	tarde	tarde	tarde
+			
+Carmen	Dolores	Marissa	Angeles	Felicia
+Mercedes ------	Carla	Margarita	Mas
+
+Disponibles 8
+Margarita ------ ------	mañana	tarde	mañana
+Marissa	mañana	mañana	mañana	tarde	mañana
+Carmen	mañana	mañana	tarde	mañana	mañana
+Felicia tarde	mañana	mañana  mañana	mañana
+Angeles	mañana	tarde	mañana	mañana	mañana
+Mas 	mañana	mañana	mañana	mañana	tarde
+Carla	mañana	tarde	tarde	mañana	mañana
+Mercedes tarde	tarde	tarde	tarde	tarde
+			
+Carmen	Dolores	Marissa	Angeles	Felicia
+Mercedes ------	Carla	Margarita	Mas
+
+Disponibles 7
+Margarita ------ ------	mañana	tarde	mañana
+Marissa	mañana	mañana	mañana	tarde	mañana
+Carmen	mañana	mañana	tarde	mañana	-----
+Angeles	mañana	tarde	mañana	mañana	mañana
+Mas 	mañana	mañana	mañana	mañana	tarde
+Carla	tarde	tarde	tarde	mañana	mañana
+Mercedes tarde	tarde	tarde	tarde	tarde
+			
+Carmen	Dolores	Marissa	Angeles	Felicia
+Mercedes ------	Carla	Margarita	Mas
+
+
+Disponibles 6
+Margarita tarde ------	tarde	tarde	tarde
+Dolores	mañana	mañana	mañana	mañana	------
+Carmen	mañana	mañana	tarde	mañana	mañana
+Felicia	tarde	mañana	mañana	mañana	mañana
+Mas	mañana	tarde	mañana	mañana	------
+Mercedes tarde	tarde	mañana	tarde	tarde
+			
+Carmen	Dolores	Marissa	Angeles	Felicia
+Mercedes ------	Carla	Margarita	Mas
+
+Disponibles 7
+Margarita 	tarde ------	mañana	tarde	mañana
+Dolores		mañana	mañana	mañana	mañana	tarde
+Carmen		mañana	mañana	tarde	mañana	mañana
+Felicia		tarde	mañana	mañana	mañana	mañana
+Angeles		mañana	tarde	mañana 	mañana	mañana
+Carla	 	------	tarde	tarde	mañana	mañana
+Mercedes 	tarde	tarde	mañana	tarde	tarde
+
+Carmen	Dolores	Marissa	Angeles	Felicia
+Mercedes ------	Carla	Margarita Mas 
+
+Disponibles 7
+Margarita 	tarde ------	mañana	tarde	mañana
+Dolores		mañana	mañana	mañana	mañana	tarde
+Carmen		------	------	tarde	-----	------
+Felicia		tarde	mañana	mañana	mañana	mañana
+Angeles		mañana	tarde	mañana 	mañana	mañana
+Carla	 	mañana	tarde	tarde	mañana	mañana
+Mercedes 	tarde	tarde	mañana	tarde	tarde
+			
+Carmen	Dolores	Marissa	Angeles	Felicia
+Mercedes ------	Carla	Margarita	Mas
+
+Disponibles 7
+Margarita ------ ------	mañana	tarde	mañana
+Dolores	mañana	mañana	mañana	mañana	tarde
+Marissa	mañana	mañana	mañana	tarde	mañana
+Felicia tarde	mañana	mañana  mañana	mañana
+Angeles	mañana	tarde	mañana	mañana	mañana
+Carla	mañana	tarde	tarde	mañana	mañana
+Mercedes tarde	tarde	tarde	tarde	tarde
+			
+Carmen	Dolores	Marissa	Angeles	Felicia
+Mercedes ------	Carla	Margarita	Mas
+
